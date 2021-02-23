@@ -11,7 +11,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // Reference contactInfo collections (de tabellen die de info hebben / opslaan)
-let contactinfo = firebase.database().ref("infoContacts") // => wordt gepushed naar de database als "infoContacts".
+let contactInfo = firebase.database().ref("infos") // => wordt gepushed naar de database als "infos".
 
 // list for a submit
 document.querySelector(".contact-form").addEventListener("submit", submitForm);
@@ -24,12 +24,14 @@ function submitForm(e) {
     let name = document.querySelector(".name").value;
     let email = document.querySelector(".email").value;
     let message = document.querySelector(".message").value;
-    // console.log("Variables", name, email, message); // om te testen invoer velden input geven.
+    console.log("LOGGING Variables", name, email, message); // om te testen invoer velden input geven.
 
     saveContactInfo(name, email, message); // deze functie geef je de waardes mee die je meegeeft aan het form.
+
+    document.querySelector(".contact-form").reset();
 }
 
-// Save contactInfos to Firebase
+// Save infos to Firebase
 
 function saveContactInfo(name, email, message) {
     let newContactInfo = contactInfo.push();
