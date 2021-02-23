@@ -1,11 +1,11 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyB33Y4HdQo_WTkTVcumGn-lTbOxNY3rvfE",
-    authDomain: "contact-form-test-2-a256d.firebaseapp.com",
-    projectId: "contact-form-test-2-a256d",
-    storageBucket: "contact-form-test-2-a256d.appspot.com",
-    messagingSenderId: "507127226860",
-    appId: "1:507127226860:web:ee4be4492afecad40fa0c9"
+    apiKey: "AIzaSyDZ0XkTJqCLYfbPB4QtcOCiBjwETYcD1oM",
+    authDomain: "test-4-21835.firebaseapp.com",
+    projectId: "test-4-21835",
+    storageBucket: "test-4-21835.appspot.com",
+    messagingSenderId: "799497282884",
+    appId: "1:799497282884:web:da37b4d221df32c4ed6311"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
